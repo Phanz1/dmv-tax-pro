@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { WobbleCard } from "@/components/ui/wobble-card";
 import Image from "next/image";
 import Services from "../services";
-import BlurFade from "@/components/ui/blur-fade";
 import {
   Accordion,
   AccordionContent,
@@ -50,7 +49,7 @@ const slides = [
     imageUrl: "/Images/q1.jpeg",
     dear: "At DMV Tax Pro",
     description:
-      "we specialize in making taxes easy and stress-free. Whether you’re a first-time filer or need expert assistance with a complex tax issue, we’re here to help you every step of the way.",
+      "we specialize in making taxes easy and stress-free. Whether you&apos;re a first-time filer or need expert assistance with a complex tax issue, we're here to help you every step of the way.",
   },
   {
     imageUrl: "/Images/q2.jpeg",
@@ -234,7 +233,7 @@ const ServicesComponent = () => {
         Bookkeeping & Accounting <br/> Accurate & Efficient Bookkeeping for Your Business
         </div>
         <p className="mt-4 text-xl font-normal text-neutral-500 max-w-lg text-center mx-auto px4">
-        Running a business means you’ve got a lot on your plate, and keeping your books in order is a big part of that. At DMV Tax Pro, we offer professional bookkeeping and accounting services designed to keep your business finances organized and compliant.
+        Running a business means you&apos;ve got a lot on your plate, and keeping your books in order is a big part of that. At DMV Tax Pro, we offer professional bookkeeping and accounting services designed to keep your business finances organized and compliant.
         </p>
         </div>
 
@@ -249,7 +248,7 @@ const ServicesComponent = () => {
         </p>
 
         <p className="my-10 text-xl">
-        Don’t wait until your tax problems get worse. <br/> Contact us at +1 (571) 470-3754 
+        Don&apos;t wait until your tax problems get worse. <br/> Contact us at +1 (571) 470-3754 
         </p>
 
         <Link
@@ -318,7 +317,7 @@ const ServicesComponent = () => {
           Business Formation Consulting
         </td>
         <td className="border px-6 py-4 text-left text-lg"> {/* Increased padding and text size */}
-          We help you choose the right structure for your business (LLC, S-Corp, C-Corp) and ensure you’re set up for success.
+          We help you choose the right structure for your business (LLC, S-Corp, C-Corp) and ensure you&apos;re set up for success.
         </td>
       </tr>
       <tr className="m-0 border-t p-0 even:bg-muted">
@@ -342,7 +341,7 @@ const ServicesComponent = () => {
           Risk Management
         </td>
         <td className="border px-6 py-4 text-left text-lg">
-          Assess potential risks and ensure you’re prepared for unexpected financial challenges.
+          Assess potential risks and ensure you&apos;re prepared for unexpected financial challenges.
         </td>
       </tr>
     </tbody>

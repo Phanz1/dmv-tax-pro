@@ -51,7 +51,7 @@ export default function Home() {
           DMV Tax Pro <br/> Expert Tax Guidance, Every Step of the Way
         </div>
         <p className="mt-4 text-xl font-normal text-neutral-300 max-w-lg text-center mx-auto px4">
-          At DMV Tax Pro, we make taxes and accounting simple and stress-free for individuals and businesses in the Washington DC, Maryland, and Virginia areas. Whether you're navigating complex tax laws or managing your business finances, our experienced team is here to provide expert guidance, every step of the way.
+          At DMV Tax Pro, we make taxes and accounting simple and stress-free for individuals and businesses in the Washington DC, Maryland, and Virginia areas. Whether you&apos;re navigating complex tax laws or managing your business finances, our experienced team is here to provide expert guidance, every step of the way.
         </p>
 
         {/* Call to Action button */}
