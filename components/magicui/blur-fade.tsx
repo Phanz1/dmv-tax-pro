@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from 'next/image';
 import {
   AnimatePresence,
   motion,
@@ -81,11 +82,14 @@ export function BlurFade({
           {images.map((image, idx) => (
             <div key={idx} className="relative">
               {/* Image */}
-              <img
-                src={image.imageUrl}
-                alt={image.title}
-                className="w-full h-auto rounded-lg"
-              />
+              <Image
+  src={image.imageUrl}
+  alt={image.title}
+  width={500}           // Set a specific width (adjust based on your layout)
+  height={300}          // Set a corresponding height for the aspect ratio
+  className="rounded-lg w-full h-auto" // Add Tailwind classes for styling
+  priority              // Optional: prioritize loading for this image
+/>
 
               {/* Title and description */}
               <div className="absolute bottom-4 left-4 text-white">

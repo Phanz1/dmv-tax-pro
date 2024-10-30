@@ -3,7 +3,6 @@
 import Navbar from "@/components/ui/navbar";
 import { Spotlight } from "@/components/ui/spotlight";
 import Link from "next/link";
-import Image from "next/image";
 import SliderOne from "@/components/ui/slider";
 import WhatWeDo from "./what-we-do";
 import PhotoGridSection from "@/components/ui/PhotoGridSection";

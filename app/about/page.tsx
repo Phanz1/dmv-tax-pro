@@ -46,11 +46,9 @@ const sectionsData = [
 ];
 
 interface NavbarProps {
-    scrollToWhatWeDo: () => void;
-    scrollToWhyChooseUs: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ scrollToWhatWeDo, scrollToWhyChooseUs }) => {
+const Navbar: React.FC<NavbarProps> = ({ }) => {
     const [isDropDownVisible, setIsDropDownVisible] = useState(false);
 
     const toggleDropDown = () => setIsDropDownVisible(!isDropDownVisible);
@@ -103,10 +101,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToWhatWeDo, scrollToWhyChooseUs }
 const AboutUs = () => {
     return (
         <div className="w-full md:items-center md:justify-center bg-blue/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden pt-56">
-            <Navbar
-                scrollToWhatWeDo={() => {/* Add scroll functionality */}}
-                scrollToWhyChooseUs={() => {/* Add scroll functionality */}}
-            />
+            <Navbar/>
 
             {/* Spotlight with margin for spacing */}
             <Spotlight className="hidden md:flex md:left-80 md:top-80 mt-10" fill="white" />

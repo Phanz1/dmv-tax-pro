@@ -1,6 +1,5 @@
 'use client'
 
-import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { CardHoverEffectDemo } from "./snippets/card-hover-effect-snippet";
 
 const Services = () => {

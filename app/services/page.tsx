@@ -64,11 +64,10 @@ const slides = [
 ];
 
 interface NavbarProps {
-  scrollToWhatWeDo: () => void;
-  scrollToWhyChooseUs: () => void;
+  
 }
 
-const Navbar: React.FC<NavbarProps> = ({ scrollToWhatWeDo, scrollToWhyChooseUs }) => {
+const Navbar: React.FC<NavbarProps> = ({ }) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
 
   const toggleDropDown = () => setIsDropDownVisible(!isDropDownVisible);
@@ -122,10 +121,7 @@ const ServicesComponent = () => {
 
   return (
     <div className="w-full md:items-center md:justify-center bg-black antialiased bg-grid-white/[0.02] relative overflow-hidden pt-56">
-            <Navbar
-                scrollToWhatWeDo={() => {/* Add scroll functionality */}}
-                scrollToWhyChooseUs={() => {/* Add scroll functionality */}}
-            />
+            <Navbar/>
 
       {/* Lamp Container */}
       <LampContainer>

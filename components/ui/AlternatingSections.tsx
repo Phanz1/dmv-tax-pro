@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Section {
   header: string;
@@ -41,9 +42,15 @@ const AlternatingSections: React.FC = () => {
               <h2 className="text-3xl font-bold mb-4">{section.header}</h2>
               <p className="text-white">{section.description}</p>
             </div>
-            <div className="md:w-1/2">
-              <img src={section.imageUrl} alt={section.header} className="w-full h-64 object-cover" />
-            </div>
+            <div className="relative w-full h-64">
+  <Image
+    src={section.imageUrl}
+    alt={section.header}
+    layout="fill"       // Makes the image fill the container
+    objectFit="cover"   // Applies object-cover styling
+    priority            // Optional: loads the image as a high priority
+  />
+</div>
           </div>
         ))}
       </div>

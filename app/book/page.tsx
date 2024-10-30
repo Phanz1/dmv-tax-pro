@@ -16,11 +16,9 @@ const checkItemVariants = {
 };
 
 interface NavbarProps {
-  scrollToWhatWeDo: () => void;
-  scrollToWhyChooseUs: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ scrollToWhatWeDo, scrollToWhyChooseUs }) => {
+const Navbar: React.FC<NavbarProps> = ({ }) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
 
   const toggleDropDown = () => setIsDropDownVisible(!isDropDownVisible);
@@ -81,10 +79,7 @@ const Book = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <Navbar
-        scrollToWhatWeDo={() => {/* Add scroll functionality */}}
-        scrollToWhyChooseUs={() => {/* Add scroll functionality */}}
-      />
+      <Navbar/>
 
       {/* Main content with adjusted text colors for better contrast */}
       <div className="md:px-0 px-6 xl:w-4/5 2xl:w-[68%] justify-between md:mt-14 md:flex mx-auto">
