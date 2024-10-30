@@ -64,7 +64,7 @@ export const HoverEffect = ({
   );
 };
 
-export const Card = ({ className, children }: SharedProps) => {
+const Card = ({ className, children }: SharedProps) => {
   return (
     <div
       className={cn(
@@ -79,7 +79,7 @@ export const Card = ({ className, children }: SharedProps) => {
   );
 };
 
-export const CardTitle = ({ className, children }: SharedProps) => {
+const CardTitle = ({ className, children }: SharedProps) => {
   return (
     <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
       {children}
@@ -87,7 +87,7 @@ export const CardTitle = ({ className, children }: SharedProps) => {
   );
 };
 
-export const CardDescription = ({ className, children }: SharedProps) => {
+const CardDescription = ({ className, children }: SharedProps) => {
   return (
     <p
       className={cn(
@@ -99,3 +99,5 @@ export const CardDescription = ({ className, children }: SharedProps) => {
     </p>
   );
 };
+
+export { Card, CardTitle, CardDescription };
