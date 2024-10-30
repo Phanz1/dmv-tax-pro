@@ -13,13 +13,12 @@ interface SharedProps {
   children: React.ReactNode;
 }
 
-export const HoverEffect = ({
-  items,
-  className,
-}: {
+interface HoverEffectProps {
   items: Item[];
   className?: string;
-}) => {
+}
+
+export const HoverEffect: React.FC<HoverEffectProps> = ({ items, className }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
@@ -64,7 +63,7 @@ export const HoverEffect = ({
   );
 };
 
-const Card = ({ className, children }: SharedProps) => {
+const Card: React.FC<SharedProps> = ({ className, children }) => {
   return (
     <div
       className={cn(
@@ -79,7 +78,7 @@ const Card = ({ className, children }: SharedProps) => {
   );
 };
 
-const CardTitle = ({ className, children }: SharedProps) => {
+const CardTitle: React.FC<SharedProps> = ({ className, children }) => {
   return (
     <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
       {children}
@@ -87,7 +86,7 @@ const CardTitle = ({ className, children }: SharedProps) => {
   );
 };
 
-const CardDescription = ({ className, children }: SharedProps) => {
+const CardDescription: React.FC<SharedProps> = ({ className, children }) => {
   return (
     <p
       className={cn(
