@@ -1,15 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaEnvelope,
-  FaInstagram,
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-} from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaEnvelope, FaInstagram, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -20,13 +12,17 @@ const Footer = () => {
           {/* Logo and Contact */}
           <div className="flex flex-col gap-y-4">
             <Link href="/">
-              <Image
-                src="/logo/logo.png"
-                width={160}
-                height={50}
-                alt="DMV Tax Pro"
-                className="w-40 object-contain"
-              />
+              {/* Updated Image component with proper configuration */}
+              <div className="relative w-40 h-12">
+                <Image
+                  src="/logo/logo.png"
+                  alt="DMV Tax Pro"
+                  fill
+                  sizes="160px"
+                  priority
+                  className="object-contain"
+                />
+              </div>
             </Link>
             <div className="flex items-center gap-x-3">
               <FaEnvelope className="text-gray-600 text-xl" />
@@ -47,24 +43,42 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
           {/* Social Media Icons */}
           <div className="flex items-center gap-x-6">
-            <Link href="https://www.facebook.com/profile.php?id=61565011738631" target="_blank" aria-label="Facebook">
+            <Link
+              href="https://www.facebook.com/profile.php?id=61565011738631"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <FaFacebookF className="text-gray-600 text-2xl hover:text-blue-600 transition-colors" />
             </Link>
-            <Link href="https://x.com/i/professionals" target="_blank" aria-label="Twitter">
+            <Link
+              href="https://x.com/i/professionals"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
               <FaTwitter className="text-gray-600 text-2xl hover:text-blue-400 transition-colors" />
             </Link>
-            <Link href="https://www.linkedin.com/company/pivotaide/?viewAsMember=true" target="_blank" aria-label="LinkedIn">
+            <Link
+              href="https://www.linkedin.com/company/pivotaide/?viewAsMember=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
               <FaLinkedinIn className="text-gray-600 text-2xl hover:text-blue-700 transition-colors" />
             </Link>
-            <Link href="https://www.instagram.com/pivotaide/" target="_blank" aria-label="Instagram">
+            <Link
+              href="https://www.instagram.com/pivotaide/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <FaInstagram className="text-gray-600 text-2xl hover:text-blue-700 transition-colors" />
             </Link>
           </div>
         </div>
-
         {/* Addresses Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Maryland, USA */}
@@ -77,17 +91,12 @@ const Footer = () => {
               </p>
             </div>
           </div>
-
-
-          
         </div>
-
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center border-t pt-6">
           <p className="text-gray-600 text-sm">
-            © 2024 DMV Tax Pro. All rights reserved.
+            © {new Date().getFullYear()} DMV Tax Pro. All rights reserved.
           </p>
-          
         </div>
       </div>
     </footer>
