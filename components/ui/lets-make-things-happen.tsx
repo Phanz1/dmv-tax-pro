@@ -9,11 +9,11 @@ function LetsMakeThingsHappenSection() {
      my-10 md:py-20  md:mx-auto
     bg-accent rounded-[45px] p-[50px] md:p-[60px] relative">
       <div className="md:pr-[22rem]">
-        <p className="text-3xl font-medium">
+        <p className="text-3xl font-medium text-black">
         Get Expert Help Today!
         </p>
 
-        <p className="my-10 text-xl">
+        <p className="my-10 text-xl text-black">
         Contact us at +1 (571) 470-3754 <br/> or Book a Consultation Online
         </p>
 

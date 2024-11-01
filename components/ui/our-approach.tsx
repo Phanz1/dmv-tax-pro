@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Section {
   title: string;
@@ -28,11 +29,14 @@ const RepeatedSection: React.FC<RepeatedSectionProps> = ({ headerText, sections 
               className="flex flex-col overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-xl"
             >
               <div className="flex-shrink-0">
-                <img
-                  className="h-48 w-full object-cover"
-                  src={section.imageUrl}
-                  alt={section.title}
-                />
+              <Image
+  className="h-48 w-full object-cover"
+  src={section.imageUrl}
+  alt={section.title}
+  width={500}  // replace with appropriate width
+  height={200} // replace with appropriate height
+  layout="responsive"
+/>
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white dark:bg-gray-800 p-6">
                 <div className="flex-1">

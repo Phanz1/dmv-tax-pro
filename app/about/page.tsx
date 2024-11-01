@@ -8,24 +8,12 @@ import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen
 import Footer from "@/components/footer";
 import HeroSection from "@/components/ui/HeroSectionProps";
 import RepeatedSection from "@/components/ui/our-approach";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import NumberTicker from "@/components/ui/number-ticker";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
 import DropDownMenu from "@/components/drop-down-menu";
 import { X, AlignJustify } from "lucide-react";
 
-const testimonials = [
-    {
-      quote: "At DMV Tax Pro, they made tax season stress-free. Their knowledge saved me money, and I feel confident knowing they have my back for IRS audits.",
-      name: "Sarah M",
-      title: "",
-    }, 
-    {
-      quote: "The team at DMV Tax Pro has been instrumental in helping my business thrive. Their bookkeeping services are top-notch, and I always feel supported when I have questions about taxes or finances.",
-      name: "John D.",
-      title: "",
-    },
-];
+
 
 const sectionsData = [
     {
@@ -162,9 +150,7 @@ const AboutUs = () => {
 
                 <RepeatedSection headerText="Our Approach" sections={sectionsData} />
 
-                <div className="h-[40rem] rounded-md flex flex-col antialiased bg-black dark:bg-black items-center justify-center relative overflow-hidden">
-                    <InfiniteMovingCards items={testimonials} direction="left" speed="normal" />
-                </div>
+                
 
                 <LetsMakeThingsHappenSection />
                 <Footer />
